@@ -1,0 +1,14 @@
+#!/bin/sh
+clear
+
+RED_STR="\033[0;31m"
+
+echo [postly] Post-only Twitter Clinet and Junkbox
+echo "----------------------------------------------"
+version="1.0.0"
+
+
+echo "postly running..."
+echo "version : ${RED_STR}${version}"
+ruby postly.rb
+echo postly exiting...
