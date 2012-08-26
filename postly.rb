@@ -4,20 +4,11 @@ require "twitter"
 require "readline"
 require "pp"
 require "term/ansicolor"
+require "./postly_config.rb"
 include Term::ANSIColor
 print magenta,"-------------------login now...------------------" + "\n" + reset
 
 #gem,インデント,その他諸々なんてなかったんや...なかったんや...
-
-
-#Twitterログイン処理
-#token は自分でスクリプト書いて適当に取ってこい
-  Twitter.configure do |config|
-    config.consumer_key ="NQpd2OiKFHuUhkSaeA7Bw"
-    config.consumer_secret = "w78R8WmSX8kIJ2N70lrB5DA6AbdswlU956QP0Cd2dY"
-    config.oauth_token = ""
-    config.oauth_token_secret = ""
-  end
 
 puts "gemとかインデントなんてなかったんや"
 print yellow,"-------------------------------------------------" + "\n" + reset
